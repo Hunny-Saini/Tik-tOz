@@ -88,6 +88,7 @@ const Game = () => {
             setWinMessage(dataArray[0] + " has won");
         } else if(dataArray[2] == dataArray[4] && dataArray[2] == dataArray[6] && dataArray[2] != ""){
             //set winner message
+            setWinMessage(dataArray[2] + " has won");
         } else if(dataArray.indexOf("") == -1){
             //set winner message
             setWinMessage("Draw");

@@ -58,9 +58,9 @@ const Game = () => {
     
     //Reset the function to reset the game
     const reset = ()=>{
-        setIsCross(true);
         dataArray.fill("");
         setWinMessage("");
+        setIsCross(true);
     }
 
     const findWinner = () => {
@@ -86,7 +86,7 @@ const Game = () => {
         } else if(dataArray[0] == dataArray[4] && dataArray[0] == dataArray[8] && dataArray[0] != ""){
             //set winner message
             setWinMessage(dataArray[0] + " has won");
-        } else if(dataArray[0] == dataArray[4] && dataArray[2] == dataArray[6] && dataArray[2] != ""){
+        } else if(dataArray[2] == dataArray[4] && dataArray[2] == dataArray[6] && dataArray[2] != ""){
             //set winner message
         } else if(dataArray.indexOf("") == -1){
             //set winner message
